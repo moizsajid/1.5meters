@@ -18,7 +18,7 @@ The frontend can connect to a backend using websockets technology for on-demand 
 
 ## Take it for a spin
 
-You can try out the front-end visualiser [here]().
+You can try out the front-end visualiser [here](https://moizsajid.github.io/1.5meters/).
 
 Since there is no backend currently hooked up here, you can grab a pre-computed test file [here](https://1drv.ms/u/s!AofnT5-g2vXZgZAs6AZRpG2vluimiw?e=QTEgsj) to upload.
 

@@ -30,7 +30,7 @@ class Player {
       var minDist = null;
       data.xyz_real.forEach((otherItem) => {
         if (i != j) {
-          distance = Math.sqrt(
+          var distance = Math.sqrt(
             Math.pow(item[0] - otherItem[0], 2) +
               Math.pow(item[2] - otherItem[2], 2)
           );
@@ -53,7 +53,7 @@ class Player {
 
       var inf = 0;
       this.infections.forEach((infection) => {
-        distance = Math.sqrt(
+        var distance = Math.sqrt(
           Math.pow(item[0] - infection[0], 2) +
             Math.pow(item[2] - infection[1], 2)
         );
