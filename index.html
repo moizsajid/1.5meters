@@ -1,0 +1,51 @@
+<head>
+  <title>1.5meters</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="vis.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    1.5meters
+    <input type="file" id="inputfile" name="filename"/>
+    <div class="headerbutton" id="upload"><i class="fa fa-upload" aria-hidden="true"></i></div>
+  </header>
+  <div id="mainbox">
+    <div class="box" id="videobox">
+      <img id="image"></img>
+      <canvas id="overlay"></canvas>
+    </div>
+    <div class="box" id="mapbox">
+      <canvas id="mapCanvas"></canvas>
+    </div>
+  </div>
+
+  <div class="box" id="statbox">
+    <div class="button control" id="backward"><i class="fa fa-step-backward" aria-hidden="true"></i></div>
+    <div class="button control" id="play"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
+    <div class="button control" id="forward"><i class="fa fa-step-forward" aria-hidden="true"></i></div>
+    <input type="text" class="control" id="frame" name="frame"/>
+
+    <div class="numberbox" id="distancingbox">
+      <div class="statlabel">Social Distancing</div>
+      <div class="stat" id="distancing">-</div>
+    </div>
+
+    <div class="numberbox" id="distancebox">
+      <div class="statlabel">Average Distance</div>
+      <div class="stat" id="distance">-</div>
+    </div>
+
+    <div class="numberbox" id="infectedbox">
+      <div class="statlabel">Transmissions</div>
+      <div class="stat" id="infected">-</div>
+    </div>
+
+    <div class="button" id="reset"><i class="fa fa-repeat" aria-hidden="true"></i></div>
+
+  </div>
+</body>
